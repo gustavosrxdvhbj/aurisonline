@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cadastro de ONG</title>
+    <link rel="stylesheet" href="style.css">
+
+    <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/@emailjs/browser@3/dist/email.min.js"></script>
+    <script src="script.js"></script>
+</head>
+<body>
+    <h1>Cadastro de ONG</h1>
+    <button class="voltar" onclick="history.back()">&#8592; &nbsp;Voltar</button>
+
+    <form id="meu-form" style="max-width: 400px; margin: 40px auto; background: #FDF6E3; padding: 30px; border-radius: 12px; box-shadow: 0 4px 12px rgba(0,0,0,0.12);">
+        <label for="nome-ong">Seu nome:</label><br>
+        <input type="text" id="nome-ong-input" name="nome_ong" required style="width: 100%; margin-bottom: 15px;"><br>
+
+        <label for="email-ong">E-mail de contato:</label><br>
+        <input type="email" id="email-ong-input" name="email" required style="width: 100%; margin-bottom: 15px;"><br>
+
+        <label for="causa-ong">Nome da ONG:</label><br>
+        <input type="text" id="causa-ong-input" name="causa" required style="width: 100%; margin-bottom: 15px;"><br>
+
+        <label for="site-ong">Site ou rede social:</label><br>
+        <input type="url" id="site-ong-input" name="site" style="width: 100%; margin-bottom: 20px;"><br>
+
+        <button type="submit" class="footer-btn" style="width: 100%;">Cadastrar ONG</button>
+    </form>
+    
+    <footer style="margin-top: 40px; color: #fff; text-align: center;">&copy; Spectree</footer>
+</body>
+</html>
